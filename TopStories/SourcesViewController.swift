@@ -14,7 +14,6 @@ class SourcesViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.title = "News Sources"
         let query = "https://newsapi.org/v1/sources?language=en&country=us&apiKey=\(apiKey)"
         DispatchQueue.global(qos: .userInitiated).async {
